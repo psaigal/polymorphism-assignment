@@ -18,8 +18,9 @@ int main()
 	cout << endl;
 
 	//polymorphism example
-	Employee *ptr_employee = new HourlyEmployee(30, 70.5, "Elvis", "408768798", "Testing 123, SF, CA");
+	Employee *ptr_employee = new HourlyEmployee(30, 70.5, "Elvis", "408768798", "Testing 123, SF, CA"); // showing polymorphism by using a base class pointer to create a dynamic derived class object
 	cout << ptr_employee->getEmployeeId() << endl;
+	ptr_employee->printCheck();
 
 	return 0;
 }
